@@ -1,0 +1,21 @@
+{
+  "name": "codex_ex01_codespaces2026",
+  "version": "1.0.0",
+  "description": "Express based REST API example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^4.18.3",
+    "mongodb": "^7.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
